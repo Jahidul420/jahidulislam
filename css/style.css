@@ -1,0 +1,266 @@
+/*@import url('https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700&display=swap');*/
+
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Open+Sans:400,600,700,700i&display=swap');
+/* ========================
+   Google font End
+   ========================*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    outline: 0px;
+    scroll-behavior: smooth;
+    /*overflow-x: hidden;*/
+}
+body{
+	/*font-family: 'Merriweather Sans', sans-serif;*/
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+}
+a,a:hover{
+	text-decoration: none;
+}
+ul li{
+	list-style: none;
+}
+img{
+	vertical-align: middle;
+	border: none;
+}
+h1,h2,h3,h4,h5,h6,a,p,img,ul,ol,li,navbar-brand{
+	margin: 0px;
+	padding: 0px;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+
+/*=================================
+      HEADER PART IS START
+  ================================*/
+
+#header{
+	background: url(../img/bn/banner1.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.header-part{
+  position: relative;
+}
+.header-part .bnr-overlay{
+  background: rgba(0, 0, 0,.6);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.header-part .bnr-con1 h1{
+	margin-top: 200px;
+	font-size: 55px;
+	font-weight: 700;
+}
+.header-part .bnr-con2 p{
+	color: rgba(255,255,255,.75);
+	margin-top: 10px;
+}
+.btn-xl {
+    padding: 1.25rem 2.25rem;
+    font-size: .85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 10rem;
+    margin-bottom: 100px;
+}
+.header-part button{
+	background: rgba(244, 98, 58,.7);
+    color: #000;
+    height: 50px;
+    width: 180px;
+    border-radius: 50px;
+    border: none;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-bottom: 100px;
+    transition: all linear .3s;
+    box-sizing: border-box;
+    outline: none;
+
+}
+.header-part button:hover{
+	background-image: linear-gradient( -82deg,#562467,#b95a5a,#085846);
+    color: #fff;
+}
+
+/*=================================
+      HEADER PART IS END
+  ================================*/
+/*=================================
+      WORK PART IS START
+  ================================*/
+.port-part{
+  padding-top: 90px;
+  padding-bottom: 60px;
+  background-image: linear-gradient( -46deg,#562467,#b95a5a,#085846);
+}
+ .port-taitle h2{
+  font-weight: 700;
+  font-size: 35px;
+  margin-bottom: 50px;  
+}
+.port-part .port-items{
+  width: 100%;
+  height: 370px;
+  position: relative;
+  border-radius: 10px;
+  transition: all linear .5s;
+  box-shadow: 0 5px 20px rgba(0,0,0,.3);
+}
+.port-part .port-items .port-image img{
+  height: 100%;
+  width: 100%;
+  transition: all linear 2s;
+}
+.port-part .port-overlay{
+  height: 100%;
+  width: 100%;
+  background: rgba(244, 98, 58,.7);
+  position: absolute;
+  color: #fff;
+  top: 0;
+  left: 0;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all linear .5s;
+  opacity: 0;
+}
+.port-part .port-items:hover .port-overlay{
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+}
+.port-part .port-items:hover .port-image img{
+  transform: translateY(-650px);
+}
+.port-part .portBtn a{
+  font-size: 50px;
+  color: rgba(0, 123, 255,.7);
+}
+.port-items .demo-box{
+	height: 50px;
+	width: 100%;
+	background-image: linear-gradient( -46deg,#562467,#085846,#562467);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.port-items .demo-box p{
+	text-align: center;
+	margin-top: 10px;
+	font-weight: 700;
+	font-size: 20px;
+	color: #fff;
+	font-family: 'Josefin Sans', sans-serif;
+}
+/*=================================
+      WORK PART IS END
+  ================================*/
+
+
+
+
+
+
+
+
+/*typography color*/
+/*#header{
+	
+	background-image: linear-gradient( -46deg,#562467,#b95a5a,#085846);
+	height: 1000px;
+}
+.hLine h2{
+	padding: 60px;
+	color: orange;
+	font-weight: 700;
+	text-align: center;
+}
+.wPart{
+	height: 250px;
+	margin-top: 60px;
+	width: 100%;
+	border: 5px solid #fff;
+	border-radius: 3px;
+}
+.wPart:hover .wImage6,
+.wPart:hover .wImage2,
+.wPart:hover .wImage5,
+.wPart:hover .wImage4,
+.wPart:hover .wImage3,
+.wPart:hover .wImage{
+	height: 1000px;
+	transform: translateY(-760px);
+	width: 100%;
+}
+ .wImage{
+	background: url(../img/wokr1.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
+	transition: all linear .9s;
+	height: 100%;
+	width: 100%;
+}
+ .wImage2{
+	background: url(../img/work3.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
+	transition: all linear .9s;
+	height: 100%;
+	width: 100%;
+}
+ .wImage3{
+	background: url(../img/work4.png);
+	-webkit-background-size: cover;
+	background-size: cover;
+	transition: all linear .9s;
+	height: 100%;
+	width: 100%;
+}
+ .wImage4{
+	background: url(../img/jj.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
+	transition: all linear .9s;
+	height: 100%;
+	width: 100%;
+}
+ .wImage5{
+	background: url(../img/work2.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
+	transition: all linear .9s;
+	height: 100%;
+	width: 100%;
+}
+ .wImage6{
+	background: url(../img/work5.png);
+	-webkit-background-size: cover;
+	background-size: cover;
+	transition: all linear .9s;
+	height: 100%;
+	width: 100%;
+}
+.headerPart .bbPart p{
+	color: orange;
+	font-size: 20px;
+	margin-top: 10px;
+	margin-left: 40%;
+
+}
+*/
